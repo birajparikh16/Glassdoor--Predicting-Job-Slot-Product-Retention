@@ -6,10 +6,14 @@ Note:  Data reflects Job Slot contracts starting in or after April 2016 and endi
 once in the data set.  In rare cases, customers may purchase multiple Slot contracts around the same time.												
 -- Slot Performance Data
 
-Employer_ID: Unique identifier for a Glassdoor customer. Note that some customers appear twice as they purchased Job Slots and then renewed, or purchased multiple contracts											
-City_ID: Unique identifier for the city a given employer resides							
-Contract_ID: Unique identifier for a contract								
-StartDate: The beginning date of the Job Slot contract									
+Employer_ID: Unique identifier for a Glassdoor customer. Note that some customers appear twice as they purchased Job Slots and then renewed, or purchased multiple contracts	
+
+City_ID: Unique identifier for the city a given employer resides
+
+Contract_ID: Unique identifier for a contract			
+
+StartDate: The beginning date of the Job Slot contract	
+
 EndDate: The end date of the Job Slot contract										
 Renewal_Flag: True/false metric indicating whether the contract was renewed at the end of the contract: 1 = renewed, 0 = not renewed	
 Job_Slots: The number of job slots included in the package										
