@@ -1,4 +1,4 @@
-## Glassdoor--Predicting-Job-Slot-Product-Retention
+## Glassdoor-Predicting-Job-Slot-Product-Retention
 
 EXHIBIT 1 - EXPLANATION OF DATA							
 							
