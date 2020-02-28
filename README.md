@@ -5,14 +5,15 @@ EXHIBIT 1 - EXPLANATION OF DATA
 Note:  Data reflects Job Slot contracts starting in or after April 2016 and ending in or before April 2018.  Each line represents a new contract transaction.  Customers who renew may appear more than							
 once in the data set.  In rare cases, customers may purchase multiple Slot contracts around the same time.							
 							
--- Slot Performance Data							
-Employer_ID:			Unique identifier for a Glassdoor customer.  Note that some customers appear twice as they purchased Job Slots and then renewed, or purchased multiple contracts				
+-- Slot Performance Data\
+
+Employer_ID: Unique identifier for a Glassdoor customer. Note that some customers appear twice as they purchased Job Slots and then renewed, or purchased multiple contracts				
 							
-City_ID:			Unique identifier for the city a given employer resides				
+City_ID: Unique identifier for the city a given employer resides				
 							
-Contract_ID:			Unique identifier for a contract				
+Contract_ID: Unique identifier for a contract				
 							
-StartDate:			The beginning date of the Job Slot contract				
+StartDate: The beginning date of the Job Slot contract				
 							
 EndDate:			The end date of the Job Slot contract				
 							
