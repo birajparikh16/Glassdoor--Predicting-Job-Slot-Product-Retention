@@ -1,7 +1,7 @@
 ## Glassdoor-Predicting-Job-Slot-Product-Retention
 
 
-**ML-Model-Flask-Deployment** : https://job-slot-retention.herokuapp.com/predict
+#### **ML-Model-Flask-Deployment ** : https://job-slot-retention.herokuapp.com/
 ==============================
 
 EXHIBIT 1 - EXPLANATION OF DATA							
