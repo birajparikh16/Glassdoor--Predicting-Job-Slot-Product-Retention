@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Glassdoor Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hero-image {
+        background-image: url("https://www.precheck.com/sites/default/files/styles/blog__large/public/4%20Ways%20to%20Boost%20Employee%20Retention%20in%20Healthcare%20Onboarding.png?itok=BvEH94BS");
+        background-color: #e6e6fa;
+        height: 615px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: black;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        width: 200px;
+        font-size: 1.5em;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: #dc143c;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero-image ">
+      <div class="hero-text ">
+        <h1 style="font-size:60px">Glassdoor</h1>
+        <h3>Predict : Job Slot Retention</h3>
+
+        <div>
+          <form action="{{ url_for('predict')}}" method="POST">
+            <label for="State">State</label>
+            <select id="state" name="state">
+              <option value="Ohio">Ohio</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Texas">Texas</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="California">California</option>
+              <option value="Washington">Washington</option>
+              <option value="New York">New York</option>
+              <option value="Oregon">Oregon</option>
+            </select>
+
+            <br />
+            <label for="city_name">City</label>
+            <input
+              type="text"
+              id="city_name"
+              name="city_name"
+              placeholder="eg. San Francisco"
+            />
+            <br />
+            <label for="job_slot">Job Slot</label>
+            <select id="job_slot" name="job_slot">
+              <option value="15">15</option>
+              <option value="50">50</option>
+            </select>
+            <br />
+            <label for="total_contract_value">Total Contract Value</label>
+            <input
+              type="text"
+              id="total_contract_value"
+              name="total_contract_value"
+              placeholder="120-6000"
+            />
+            <br />
+            <label for="applications">Applications</label>
+            <input
+              type="text"
+              id="applications"
+              name="applications"
+              placeholder="0-6000"
+            />
+            <br />
+            <label for="apply_start_clicks">Apply Start Clicks</label>
+            <input
+              type="text"
+              id="apply_start_clicks"
+              name="apply_start_clicks"
+              placeholder="0-12500"
+            />
+            <br />
+            <label for="click_market_value">Click Market Value</label>
+            <input
+              type="text"
+              id="click_market_value"
+              name="click_market_value"
+              placeholder="0.0-356000.0"
+            />
+            <br />
+            <label class="text-info" for="job_listings">Job Listings</label>
+            <input
+              type="text"
+              id="job_listings"
+              name="job_listings"
+              placeholder="0-350"
+            />
+            <br />
+            <label for="start_year">Start Year</label>
+            <select id="start_year" name="start_year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+            </select>
+            <label for="start_month">Start Month</label>
+            <select id="start_month" name="start_month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="start_day">Start Day</label>
+            <select id="start_day" name="start_day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <br />
+            <label for="end_year">End Year</label>
+            <select id="end_year" name="end_year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+            </select>
+            <label for="end_month">End Month</label>
+            <select id="end_month" name="end_month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="end_day">End Day</label>
+            <select id="end_day" name="end_day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <br />
+            <br />
+            <button type="submit" class="btn btn-primary btn-block btn-large">
+              Predict
+            </button>
+          </form>
+
+          {{ prediction_text }}
+
+          <main>
+            {% block main %}{% endblock %}
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

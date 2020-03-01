@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+
+{% block main %}
+    <h3>{{ city }} not found in {{ state }} !</h3>
+    <h4> Please enter valid City name </h4>
+    <p><a href="{{ url_for('home') }}">Refresh</a></p>
+{% endblock %}
