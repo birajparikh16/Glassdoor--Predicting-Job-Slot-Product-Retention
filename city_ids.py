@@ -2,11 +2,9 @@ import numpy as np
 import pandas as pd
 
 def get_cityid(state, city_name):
-
-    # file_location = "C:/Users/biraj/Documents/company/glassdoor/data"
     
     # Reading the location data to get the city id corresponding to the city name and state
-    table = pd.read_csv("../data/location.csv")
+    table = pd.read_csv("data/location.csv")
 
     # Converting to lower case 
     state = state.lower()
