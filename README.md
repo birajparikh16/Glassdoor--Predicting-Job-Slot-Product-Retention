@@ -1,5 +1,7 @@
 ## Glassdoor-Predicting-Job-Slot-Product-Retention
 
+-- **ML-Model-Flask-Deployment** : https://job-slot-retention.herokuapp.com/predict
+
 EXHIBIT 1 - EXPLANATION OF DATA							
 							
 Note:  Data reflects Job Slot contracts starting in or after April 2016 and ending in or before April 2018.  Each line represents a new contract transaction.  Customers who renew may appear more than							
